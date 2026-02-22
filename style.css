@@ -1,0 +1,34 @@
+nav
+{text-align: center}
+ul
+{text-align: right}
+* {background-color: #F6D9D7}
+
+
+
+/* Le parent qui englobe tout */
+.conteneur-principal {
+display: flex; /* Active le mode flexible */
+justify-content: space-between; /* Écarte la gauche et la droite */
+align-items: flex-start; /* Aligne tout en haut */
+width: 100%;
+}
+
+
+/* Optionnel : Définir des tailles */
+.colonne-gauche {
+width: 70%; /* La gauche prend plus de place */
+}
+
+
+.colonne-droite {
+width: 25%; /* La droite est plus petite */
+}
+
+
+/* TRES IMPORTANT : Empêcher l'image de casser le site */
+
+img {
+max-width: 100%; /* L'image ne dépassera jamais son conteneur */
+height: auto;
+}
